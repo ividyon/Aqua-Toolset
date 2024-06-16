@@ -118,9 +118,9 @@ namespace SoulsModelTool
             string actualFilter = string.Join(";", transformedFilters);
             OpenFileDialog openFileDialog = new OpenFileDialog()
             {
-                Title = "Select From Software flver, MDL4, TPF, BND or BluePoint CMDL or CMSH file(s)",
+                Title = "Select FromSoftware flver, MDL4, TPF, BND or BluePoint CMDL or CMSH file(s)",
                 Filter =
-                    $"From Software flver, MDL4, or BND Files ({filterNames})|{actualFilter}|All Files (*.*)|*",
+                    $"FromSoftware or BluePoint files ({filterNames})|{actualFilter}|All Files (*.*)|*",
                 Multiselect = true
             };
             if (openFileDialog.ShowDialog() == true)
@@ -270,7 +270,7 @@ namespace SoulsModelTool
                 else
                 {
                     MessageBox.Show(
-                        "You must select a valid From Software title!\nCurrent valid titles are: Demon's Souls, Dark Souls: Prepare to Die Edition, Dark Souls Remastered, Dark Souls II: Scholar of the First Sin, Bloodborne, Dark Souls III, Sekiro, Elden Ring");
+                        "You must select a valid FromSoftware title!\nCurrent valid titles are: Demon's Souls, Dark Souls: Prepare to Die Edition, Dark Souls Remastered, Dark Souls II: Scholar of the First Sin, Bloodborne, Dark Souls III, Sekiro, Elden Ring");
                 }
 
                 SetGameLabel();
